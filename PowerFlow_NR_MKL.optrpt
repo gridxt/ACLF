@@ -1,0 +1,773 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+
+Begin optimization report for: find(MKL_Complex16 *, long long *, long long *, unsigned long long, unsigned long long)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (find(MKL_Complex16 *, long long *, long long *, unsigned long long, unsigned long long)) [1] PowerFlow_NR_MKL.c(262,122)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(262,122):remark #34051: REGISTER ALLOCATION : [find] PowerFlow_NR_MKL.c:262
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    9[ rax rdx rcx rsi rdi r8-r9 zmm0-zmm1]
+        
+    Routine temporaries
+        Total         :      26
+            Global    :      12
+            Local     :      14
+        Regenerable   :       1
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :      16 bytes*
+            Reads     :       2 [5.33e+00 ~ 5.3%]
+            Writes    :       6 [5.33e+00 ~ 5.3%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: PF_NR_MKL(MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, double *, double *, unsigned long long, int *, int *, int *, int *, double, double *, double *, double *, double *, double *, unsigned long long, unsigned long long, unsigned long long, unsigned long long *, unsigned long long, double *, double *, int, int, double, int, int, int, int, double *, double *)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (PF_NR_MKL(MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, double *, double *, unsigned long long, int *, int *, int *, int *, double, double *, double *, double *, double *, double *, unsigned long long, unsigned long long, unsigned long long, unsigned long long *, unsigned long long, double *, double *, int, int, double, int, int, int, int, double *, double *)) [2] PowerFlow_NR_MKL.c(855,156)
+  -> (1078,2) Sbus(unsigned long long, unsigned long long, double, double *, double *, double *, double *, int *, int *, double *, double *, int, int)
+  -> (1079,2) Power_Mimatch(MKL_Complex16 *, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, double *, unsigned long long, double *, double *, int, int, int)
+  -> (1080,2) F_Build(double *, double *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, double *, int, int)
+  -> (1105,3) dS_dV_Sparse(MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, unsigned long long, sparse_matrix_t, sparse_matrix_t, sparse_matrix_t, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, unsigned long long, int, int)
+  -> (1108,3) dS_dV(MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, double *, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, int, int)
+  -> (1116,3) Jacobian_Sparse_Initialize(double **, long long **, long long **, long long **, long long **, unsigned long long *, unsigned long long *, unsigned long long, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, int *, unsigned long long, unsigned long long, unsigned long long, int *, int, int)
+  -> (1123,3) Jacobian_Sparse(double *, long long *, long long *, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, int, int)
+  -> (1126,3) Jacobian(MKL_Complex16 *, MKL_Complex16 *, int *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, int, int)
+  -> (1141,3) pardiso_solver(double *, long long *, long long *, double *, double *, long long, int, int)
+  -> (1149,2) Voltage_Update(double *, double *, MKL_Complex16 *, unsigned long long, unsigned long long, int *, double *, unsigned long long, int *, int, int)
+  -> (1155,2) Power_Mimatch(MKL_Complex16 *, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, double *, unsigned long long, double *, double *, int, int, int)
+  -> (1161,2) F_Build(double *, double *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, double *, int, int)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(953,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(952,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(1021,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(1020,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(1031,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(1030,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(1041,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(1040,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(1068,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(1067,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(855,156):remark #34051: REGISTER ALLOCATION : [PF_NR_MKL] PowerFlow_NR_MKL.c:855
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :    1535
+            Global    :     360
+            Local     :    1175
+        Regenerable   :     432
+        Spilled       :      87
+        
+    Routine stack
+        Variables     :     368 bytes*
+            Reads     :     108 [5.29e+00 ~ 5.3%]
+            Writes    :      71 [5.58e+00 ~ 5.6%]
+        Spills        :     736 bytes*
+            Reads     :     277 [1.26e+01 ~ 12.6%]
+            Writes    :     210 [1.42e+01 ~ 14.2%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: F_Build(double *, double *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, double *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (F_Build(double *, double *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, double *, int, int)) [3] PowerFlow_NR_MKL.c(82,231)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(90,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(89,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(99,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(98,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(82,231):remark #34051: REGISTER ALLOCATION : [F_Build] PowerFlow_NR_MKL.c:82
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     481
+            Global    :     102
+            Local     :     379
+        Regenerable   :     189
+        Spilled       :      21
+        
+    Routine stack
+        Variables     :     156 bytes*
+            Reads     :      31 [1.90e+00 ~ 1.9%]
+            Writes    :      30 [9.85e+00 ~ 9.9%]
+        Spills        :     208 bytes*
+            Reads     :      64 [9.17e+00 ~ 9.2%]
+            Writes    :      51 [7.76e+00 ~ 7.8%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: Power_Mimatch(MKL_Complex16 *, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, double *, unsigned long long, double *, double *, int, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (Power_Mimatch(MKL_Complex16 *, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, double *, unsigned long long, double *, double *, int, int, int)) [4] PowerFlow_NR_MKL.c(47,268)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(72,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(71,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(47,268):remark #34051: REGISTER ALLOCATION : [Power_Mimatch] PowerFlow_NR_MKL.c:47
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     277
+            Global    :      49
+            Local     :     228
+        Regenerable   :      88
+        Spilled       :       7
+        
+    Routine stack
+        Variables     :     120 bytes*
+            Reads     :      22 [3.02e+00 ~ 3.0%]
+            Writes    :      18 [6.29e+00 ~ 6.3%]
+        Spills        :      96 bytes*
+            Reads     :      20 [6.54e+00 ~ 6.5%]
+            Writes    :      17 [8.05e+00 ~ 8.1%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: Voltage_Update(double *, double *, MKL_Complex16 *, unsigned long long, unsigned long long, int *, double *, unsigned long long, int *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (Voltage_Update(double *, double *, MKL_Complex16 *, unsigned long long, unsigned long long, int *, double *, unsigned long long, int *, int, int)) [5] PowerFlow_NR_MKL.c(220,281)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(227,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(226,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(236,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(235,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(247,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(246,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(220,281):remark #34051: REGISTER ALLOCATION : [Voltage_Update] PowerFlow_NR_MKL.c:220
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     657
+            Global    :     134
+            Local     :     523
+        Regenerable   :     227
+        Spilled       :      18
+        
+    Routine stack
+        Variables     :     176 bytes*
+            Reads     :      54 [1.14e+00 ~ 1.1%]
+            Writes    :      30 [4.62e+00 ~ 4.6%]
+        Spills        :     184 bytes*
+            Reads     :      54 [1.02e+01 ~ 10.2%]
+            Writes    :      40 [7.94e+00 ~ 7.9%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: pardiso_solver(double *, long long *, long long *, double *, double *, long long, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (pardiso_solver(double *, long long *, long long *, double *, double *, long long, int, int)) [6] PowerFlow_NR_MKL.c(278,121)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(366,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(365,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(278,121):remark #34051: REGISTER ALLOCATION : [pardiso_solver] PowerFlow_NR_MKL.c:278
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     198
+            Global    :      46
+            Local     :     152
+        Regenerable   :      91
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :    1168 bytes*
+            Reads     :      12 [6.63e-01 ~ 0.7%]
+            Writes    :      42 [2.37e+01 ~ 23.7%]
+        Spills        :      40 bytes*
+            Reads     :      10 [7.37e-01 ~ 0.7%]
+            Writes    :      10 [1.11e+00 ~ 1.1%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: Jacobian_Sparse(double *, long long *, long long *, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (Jacobian_Sparse(double *, long long *, long long *, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, int, int)) [7] PowerFlow_NR_MKL.c(829,198)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(834,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(833,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(829,198):remark #34051: REGISTER ALLOCATION : [Jacobian_Sparse] PowerFlow_NR_MKL.c:829
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     205
+            Global    :      37
+            Local     :     168
+        Regenerable   :      72
+        Spilled       :       3
+        
+    Routine stack
+        Variables     :     104 bytes*
+            Reads     :      15 [0.00e+00 ~ 0.0%]
+            Writes    :      15 [6.50e+00 ~ 6.5%]
+        Spills        :      64 bytes*
+            Reads     :      15 [3.55e+00 ~ 3.5%]
+            Writes    :      15 [7.10e+00 ~ 7.1%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: Jacobian(MKL_Complex16 *, MKL_Complex16 *, int *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (Jacobian(MKL_Complex16 *, MKL_Complex16 *, int *, unsigned long long, unsigned long long, unsigned long long, int *, int *, double *, int, int)) [8] PowerFlow_NR_MKL.c(183,240)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(194,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(193,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(192,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(183,240):remark #34051: REGISTER ALLOCATION : [Jacobian] PowerFlow_NR_MKL.c:183
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     300
+            Global    :      66
+            Local     :     234
+        Regenerable   :      97
+        Spilled       :      18
+        
+    Routine stack
+        Variables     :     160 bytes*
+            Reads     :      11 [0.00e+00 ~ 0.0%]
+            Writes    :      20 [4.71e+00 ~ 4.7%]
+        Spills        :     184 bytes*
+            Reads     :      43 [1.04e+01 ~ 10.4%]
+            Writes    :      28 [6.97e+00 ~ 7.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: dS_dV(MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, double *, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (dS_dV(MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, MKL_Complex16 *, double *, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, int, int)) [9] PowerFlow_NR_MKL.c(127,184)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(142,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(141,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(153,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(152,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(151,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(127,184):remark #34051: REGISTER ALLOCATION : [dS_dV] PowerFlow_NR_MKL.c:127
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     660
+            Global    :     134
+            Local     :     526
+        Regenerable   :     141
+        Spilled       :      15
+        
+    Routine stack
+        Variables     :     172 bytes*
+            Reads     :      41 [1.40e-01 ~ 0.1%]
+            Writes    :      27 [2.24e+00 ~ 2.2%]
+        Spills        :     160 bytes*
+            Reads     :      65 [1.72e+01 ~ 17.2%]
+            Writes    :      42 [4.49e+00 ~ 4.5%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: dS_dV_Sparse(MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, unsigned long long, sparse_matrix_t, sparse_matrix_t, sparse_matrix_t, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, unsigned long long, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (dS_dV_Sparse(MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, unsigned long long, sparse_matrix_t, sparse_matrix_t, sparse_matrix_t, sparse_matrix_t, MKL_Complex16 *, MKL_Complex16 *, double *, unsigned long long, int, int)) [10] PowerFlow_NR_MKL.c(385,125)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(427,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(426,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(454,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(453,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(484,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(483,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(494,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(493,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(385,125):remark #34051: REGISTER ALLOCATION : [dS_dV_Sparse] PowerFlow_NR_MKL.c:385
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     892
+            Global    :     168
+            Local     :     724
+        Regenerable   :     328
+        Spilled       :      11
+        
+    Routine stack
+        Variables     :     524 bytes*
+            Reads     :      72 [5.59e+00 ~ 5.6%]
+            Writes    :      74 [1.14e+01 ~ 11.4%]
+        Spills        :     128 bytes*
+            Reads     :      47 [3.71e+00 ~ 3.7%]
+            Writes    :      39 [5.31e+00 ~ 5.3%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: Sbus(unsigned long long, unsigned long long, double, double *, double *, double *, double *, int *, int *, double *, double *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (Sbus(unsigned long long, unsigned long long, double, double *, double *, double *, double *, int *, int *, double *, double *, int, int)) [11] PowerFlow_NR_MKL.c(18,246)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(26,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(25,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(34,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(33,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(18,246):remark #34051: REGISTER ALLOCATION : [Sbus] PowerFlow_NR_MKL.c:18
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :     375
+            Global    :      76
+            Local     :     299
+        Regenerable   :     143
+        Spilled       :       8
+        
+    Routine stack
+        Variables     :     140 bytes*
+            Reads     :      17 [4.04e-01 ~ 0.4%]
+            Writes    :      23 [4.51e+00 ~ 4.5%]
+        Spills        :     104 bytes*
+            Reads     :      29 [4.04e+00 ~ 4.0%]
+            Writes    :      29 [6.86e+00 ~ 6.9%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: BinarySearch(int *, long long, long long, long long)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (BinarySearch(int *, long long, long long, long long)) [12] PowerFlow_NR_MKL.c(511,101)
+
+
+    Report from: Offload optimizations [offload]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(511,101):remark #34051: REGISTER ALLOCATION : [BinarySearch] PowerFlow_NR_MKL.c:511
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    8[ rax rdx rcx rsi rdi r8-r10]
+        
+    Routine temporaries
+        Total         :      23
+            Global    :      13
+            Local     :      10
+        Regenerable   :       0
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: CheckRef(unsigned long long, unsigned long long *, unsigned long long)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (CheckRef(unsigned long long, unsigned long long *, unsigned long long)) [13] PowerFlow_NR_MKL.c(540,118)
+
+
+    Report from: Offload optimizations [offload]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(540,118):remark #34051: REGISTER ALLOCATION : [CheckRef] PowerFlow_NR_MKL.c:540
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    6[ rax rdx rcx rsi rdi r8]
+        
+    Routine temporaries
+        Total         :      17
+            Global    :      11
+            Local     :       6
+        Regenerable   :       0
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: Jacobian_Sparse_Initialize(double **, long long **, long long **, long long **, long long **, unsigned long long *, unsigned long long *, unsigned long long, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, int *, unsigned long long, unsigned long long, unsigned long long, int *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (Jacobian_Sparse_Initialize(double **, long long **, long long **, long long **, long long **, unsigned long long *, unsigned long long *, unsigned long long, unsigned long long, MKL_Complex16 *, MKL_Complex16 *, long long *, long long *, int *, unsigned long long, unsigned long long, unsigned long long, int *, int, int)) [14] PowerFlow_NR_MKL.c(554,512)
+  -> (572,9) CheckRef(unsigned long long, unsigned long long *, unsigned long long)
+  -> (572,54) CheckRef(unsigned long long, unsigned long long *, unsigned long long)
+  -> (577,13) BinarySearch(int *, long long, long long, long long)
+  -> (578,29) BinarySearch(int *, long long, long long, long long)
+  -> (581,13) BinarySearch(int *, long long, long long, long long)
+  -> (582,29) BinarySearch(int *, long long, long long, long long)
+  -> (590,13) BinarySearch(int *, long long, long long, long long)
+  -> (601,13) BinarySearch(int *, long long, long long, long long)
+  -> (609,14) BinarySearch(int *, long long, long long, long long)
+  -> (611,30) BinarySearch(int *, long long, long long, long long)
+  -> (624,14) BinarySearch(int *, long long, long long, long long)
+  -> (683,9) CheckRef(unsigned long long, unsigned long long *, unsigned long long)
+  -> (683,56) CheckRef(unsigned long long, unsigned long long *, unsigned long long)
+  -> (688,13) BinarySearch(int *, long long, long long, long long)
+  -> (689,29) BinarySearch(int *, long long, long long, long long)
+  -> (692,13) BinarySearch(int *, long long, long long, long long)
+  -> (693,29) BinarySearch(int *, long long, long long, long long)
+  -> (711,13) BinarySearch(int *, long long, long long, long long)
+  -> (731,13) BinarySearch(int *, long long, long long, long long)
+  -> (739,14) BinarySearch(int *, long long, long long, long long)
+  -> (741,30) BinarySearch(int *, long long, long long, long long)
+  -> (765,14) BinarySearch(int *, long long, long long, long long)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PowerFlow_NR_MKL.c(569,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(568,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(665,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(664,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(680,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(679,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PowerFlow_NR_MKL.c(795,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PowerFlow_NR_MKL.c(794,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PowerFlow_NR_MKL.c(554,512):remark #34051: REGISTER ALLOCATION : [Jacobian_Sparse_Initialize] PowerFlow_NR_MKL.c:554
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm3]
+        
+    Routine temporaries
+        Total         :    1586
+            Global    :     335
+            Local     :    1251
+        Regenerable   :     450
+        Spilled       :      82
+        
+    Routine stack
+        Variables     :     288 bytes*
+            Reads     :     169 [1.64e+00 ~ 1.6%]
+            Writes    :     112 [4.28e+00 ~ 4.3%]
+        Spills        :     696 bytes*
+            Reads     :     272 [4.38e+00 ~ 4.4%]
+            Writes    :     162 [4.48e+00 ~ 4.5%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================

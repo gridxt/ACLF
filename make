@@ -1,0 +1,1 @@
+icc Main.c LoadData.c NumericalFunctions.c PowerFlow_NR.c PowerFlow_NR_MKL.c PrepareData.c YbusBuild.c YbusBuildSparse.c PFSolution.c -qopenmp -DMKL_ILP64 -m64 -I$MKLROOT/include -L$MKLROOT/lib/intel64 -lmkl_intel_ilp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread -lm -ldl -O1 -qopt-report=2 -o pf.out

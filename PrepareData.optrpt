@@ -1,0 +1,194 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+
+Begin optimization report for: ReturnNewBusNo(int *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (ReturnNewBusNo(int *, int, int)) [1] PrepareData.c(4,59)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PrepareData.c(4,59):remark #34051: REGISTER ALLOCATION : [ReturnNewBusNo] PrepareData.c:4
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    4[ rax rdx rsi rdi]
+        
+    Routine temporaries
+        Total         :      17
+            Global    :      10
+            Local     :       7
+        Regenerable   :       1
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: ReturnOldBusNo(int *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (ReturnOldBusNo(int *, int, int)) [2] PrepareData.c(19,59)
+
+
+    Report from: Offload optimizations [offload]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PrepareData.c(19,59):remark #34051: REGISTER ALLOCATION : [ReturnOldBusNo] PrepareData.c:19
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    4[ rax rdx rsi rdi]
+        
+    Routine temporaries
+        Total         :      17
+            Global    :      10
+            Local     :       7
+        Regenerable   :       1
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: PrepareData(double *, double *, double *, double *, unsigned long long, unsigned long long, unsigned long long, unsigned long long, int, int, int, int, int, int, int, double, int **, int **, double **, double **, double **, double **, int **, double **, double **, double **, int **, double **, double **, int **, int **, double **, double **, double **, double **, double **, double **, double **, double **, int **, double **, double **, int **, double **, double **, double **, double **, double **, double **, int **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, unsigned long long **, unsigned long long *, int **, int **, int **, unsigned long long *, unsigned long long *, unsigned long long *, unsigned long long *, double **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (PrepareData(double *, double *, double *, double *, unsigned long long, unsigned long long, unsigned long long, unsigned long long, int, int, int, int, int, int, int, double, int **, int **, double **, double **, double **, double **, int **, double **, double **, double **, int **, double **, double **, int **, int **, double **, double **, double **, double **, double **, double **, double **, double **, int **, double **, double **, int **, double **, double **, double **, double **, double **, double **, int **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, double **, unsigned long long **, unsigned long long *, int **, int **, int **, unsigned long long *, unsigned long long *, unsigned long long *, unsigned long long *, double **)) [3] PrepareData.c(60,32)
+  -> (130,20) ReturnNew(int *, int, int)
+  -> (131,18) ReturnNew(int *, int, int)
+  -> (162,22) ReturnNew(int *, int, int)
+
+
+    Report from: Offload optimizations [offload]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PrepareData.c(60,32):remark #34051: REGISTER ALLOCATION : [PrepareData] PrepareData.c:60
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   19[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm4]
+        
+    Routine temporaries
+        Total         :     350
+            Global    :     147
+            Local     :     203
+        Regenerable   :      97
+        Spilled       :      49
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :     344 bytes*
+            Reads     :      74 [1.30e+01 ~ 13.0%]
+            Writes    :      53 [3.72e+00 ~ 3.7%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================
+
+Begin optimization report for: ReturnNew(int *, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (ReturnNew(int *, int, int)) [4] PrepareData.c(36,56)
+
+
+    Report from: Offload optimizations [offload]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PrepareData.c(36,56):remark #34051: REGISTER ALLOCATION : [ReturnNew] PrepareData.c:36
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :    5[ rax rdx rcx rsi rdi]
+        
+    Routine temporaries
+        Total         :      20
+            Global    :      11
+            Local     :       9
+        Regenerable   :       1
+        Spilled       :       0
+        
+    Routine stack
+        Variables     :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+        Spills        :       0 bytes*
+            Reads     :       0 [0.00e+00 ~ 0.0%]
+            Writes    :       0 [0.00e+00 ~ 0.0%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================

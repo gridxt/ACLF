@@ -1,0 +1,63 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+
+Begin optimization report for: main(int, char **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (main(int, char **)) [1] Main.c(5,1)
+
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+Main.c(227,25):remark #34000: call to memcpy implemented inline with string ops
+Main.c(227,25):remark #34000: call to memcpy implemented inline with string ops
+Main.c(303,27):remark #34000: call to memcpy implemented inline with string ops
+Main.c(303,27):remark #34000: call to memcpy implemented inline with string ops
+Main.c(5,1):remark #34051: REGISTER ALLOCATION : [main] Main.c:5
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   18[ rax rdx rcx rbx rbp rsi rdi r8-r15 zmm0-zmm2]
+        
+    Routine temporaries
+        Total         :    1030
+            Global    :     177
+            Local     :     853
+        Regenerable   :     378
+        Spilled       :      12
+        
+    Routine stack
+        Variables     :    1589 bytes*
+            Reads     :     154 [5.60e+00 ~ 5.6%]
+            Writes    :     109 [1.65e+01 ~ 16.5%]
+        Spills        :      48 bytes*
+            Reads     :      28 [1.17e+00 ~ 1.2%]
+            Writes    :       6 [9.26e-01 ~ 0.9%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================

@@ -1,0 +1,90 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+
+Begin optimization report for: MakeYbusSparse(struct Ybus_Struct *, double, unsigned long long, unsigned long long, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double **)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (MakeYbusSparse(struct Ybus_Struct *, double, unsigned long long, unsigned long long, int *, int *, int *, double *, double *, double *, double *, double *, double *, double *, double **)) [1] YbusBuildSparse.c(60,1)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at YbusBuildSparse.c(166,1)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(165,1)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at YbusBuildSparse.c(196,1)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(195,1)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at YbusBuildSparse.c(251,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(250,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at YbusBuildSparse.c(296,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(295,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at YbusBuildSparse.c(360,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(359,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at YbusBuildSparse.c(369,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(368,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at YbusBuildSparse.c(441,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at YbusBuildSparse.c(440,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+YbusBuildSparse.c(60,1):remark #34051: REGISTER ALLOCATION : [MakeYbusSparse] YbusBuildSparse.c:60
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   20[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm5]
+        
+    Routine temporaries
+        Total         :    2403
+            Global    :     535
+            Local     :    1868
+        Regenerable   :     669
+        Spilled       :     125
+        
+    Routine stack
+        Variables     :     532 bytes*
+            Reads     :     304 [1.44e+01 ~ 14.4%]
+            Writes    :     110 [1.92e+01 ~ 19.2%]
+        Spills        :    1040 bytes*
+            Reads     :     219 [3.76e+00 ~ 3.8%]
+            Writes    :     186 [3.82e+00 ~ 3.8%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================

@@ -1,0 +1,156 @@
+Intel(R) Advisor can now assist with vectorization and show optimization
+  report messages with your source code.
+See "https://software.intel.com/en-us/intel-advisor-xe" for details.
+
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINING OPTION VALUES:
+  -inline-factor: 100
+  -inline-min-size: 30
+  -inline-max-size: 230
+  -inline-max-total-size: 2000
+  -inline-max-per-routine: 10000
+  -inline-max-per-compile: 500000
+
+
+Begin optimization report for: PF_Solution(struct PFSol_Struct *, struct Ybus_Struct *, unsigned long long, int *, int *, int *, double *, unsigned long long, int *, int *, double *, double *, double *, double *, double *, unsigned long long, int *, unsigned long long, int *, int *, double *, double *, double *, double *, double *, double, int, unsigned long long *, unsigned long long, double *, double *, int, int, int, int)
+
+    Report from: Interprocedural optimizations [ipo]
+
+INLINE REPORT: (PF_Solution(struct PFSol_Struct *, struct Ybus_Struct *, unsigned long long, int *, int *, int *, double *, unsigned long long, int *, int *, double *, double *, double *, double *, double *, unsigned long long, int *, unsigned long long, int *, int *, double *, double *, double *, double *, double *, double, int, unsigned long long *, unsigned long long, double *, double *, int, int, int, int)) [1] PFSolution.c(17,1)
+
+
+    Report from: OpenMP optimizations [openmp]
+
+OpenMP Construct at PFSolution.c(189,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(188,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(213,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(212,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(231,4)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(230,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(229,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(244,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(243,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(286,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(285,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(295,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(294,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(305,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(304,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(327,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(326,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(375,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(374,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(517,6)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(516,6)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(536,4)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(535,4)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(628,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(627,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(653,2)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(652,2)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(730,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(729,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(742,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(741,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(758,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(757,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(769,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(768,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(792,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(791,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(847,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(846,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(855,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(854,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(865,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(864,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(877,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(876,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+OpenMP Construct at PFSolution.c(908,3)
+remark #16204: OpenMP multithreaded code generation for SINGLE was successful
+OpenMP Construct at PFSolution.c(907,3)
+remark #16201: OpenMP DEFINED REGION WAS PARALLELIZED
+
+    Report from: Loop nest, Vector & Auto-parallelization optimizations [loop, vec, par]
+
+remark #15320: routine skipped: loop optimizations disabled
+
+    Report from: Code generation optimizations [cg]
+
+PFSolution.c(17,1):remark #34051: REGISTER ALLOCATION : [PF_Solution] PFSolution.c:17
+
+    Hardware registers
+        Reserved     :    2[ rsp rip]
+        Available    :   39[ rax rdx rcx rbx rbp rsi rdi r8-r15 mm0-mm7 zmm0-zmm15]
+        Callee-save  :    6[ rbx rbp r12-r15]
+        Assigned     :   26[ rax rdx rcx rbx rsi rdi r8-r15 zmm0-zmm11]
+        
+    Routine temporaries
+        Total         :    6489
+            Global    :    1408
+            Local     :    5081
+        Regenerable   :    1958
+        Spilled       :     190
+        
+    Routine stack
+        Variables     :    1636 bytes*
+            Reads     :     775 [1.54e+01 ~ 15.4%]
+            Writes    :     386 [2.35e+01 ~ 23.5%]
+        Spills        :    1560 bytes*
+            Reads     :     587 [4.10e+00 ~ 4.1%]
+            Writes    :     426 [7.45e+00 ~ 7.4%]
+    
+    Notes
+    
+        *Non-overlapping variables and spills may share stack space,
+         so the total stack size might be less than this.
+    
+
+===========================================================================

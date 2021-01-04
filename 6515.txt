@@ -1,0 +1,2001 @@
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 1
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.070427 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034923 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.027932 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585039e-07
+Tolerance at iteration [3] = 1.31049616e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.164398 Secs)
+	memory allocation               (0.000044 Secs) (0.03 percent)
+	initialize V, PVPQ, and F(X0)   (0.001912 Secs) (1.16 percent)
+	calculate partial derivatives   (0.014086 Secs) (8.57 percent)
+	form sparse jacobian arrays     (0.038029 Secs) (23.13 percent)
+	form jacobian matirx            (0.000751 Secs) (0.46 percent)
+	solve the linear system         (0.107814 Secs) (65.58 percent)
+	update voltages                 (0.000925 Secs) (0.56 percent)
+	calculate injected bus powers   (0.000587 Secs) (0.36 percent)
+	calculate norm                  (0.000101 Secs) (0.06 percent)
+	average time per iteration      (0.054799 Secs)
+	MKL Peak Memory Use:            (43693 KB - 42.67 MB)
+
+Total Calculation Time (Ybus + PF): (0.192329 Secs)
+
+
+Power flow solution... Successful!          (0.005296 Secs)
+       update generators Pg and Qg          (0.000152 Secs) (2.87 percent)
+       calculate branch flows               (0.000238 Secs) (4.49 percent)
+       calculate line losses                (0.000083 Secs) (1.58 percent)
+       calculate line charging injection    (0.000109 Secs) (2.05 percent)
+       calculate partial derivatives        (0.004419 Secs) (83.44 percent)
+       calculate misc. information          (0.000077 Secs) (1.46 percent)
+       MKL Peak Memory Use:                 (39753 KB - 38.82 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.197626 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 1
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023256 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035162 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.028821 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585039e-07
+Tolerance at iteration [3] = 1.31049616e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.163816 Secs)
+	memory allocation               (0.000044 Secs) (0.03 percent)
+	initialize V, PVPQ, and F(X0)   (0.001880 Secs) (1.15 percent)
+	calculate partial derivatives   (0.014032 Secs) (8.57 percent)
+	form sparse jacobian arrays     (0.037842 Secs) (23.10 percent)
+	form jacobian matirx            (0.000778 Secs) (0.47 percent)
+	solve the linear system         (0.107465 Secs) (65.60 percent)
+	update voltages                 (0.000937 Secs) (0.57 percent)
+	calculate injected bus powers   (0.000592 Secs) (0.36 percent)
+	calculate norm                  (0.000101 Secs) (0.06 percent)
+	average time per iteration      (0.054605 Secs)
+	MKL Peak Memory Use:            (43693 KB - 42.67 MB)
+
+Total Calculation Time (Ybus + PF): (0.192636 Secs)
+
+
+Power flow solution... Successful!          (0.005238 Secs)
+       update generators Pg and Qg          (0.000152 Secs) (2.90 percent)
+       calculate branch flows               (0.000233 Secs) (4.46 percent)
+       calculate line losses                (0.000091 Secs) (1.74 percent)
+       calculate line charging injection    (0.000107 Secs) (2.04 percent)
+       calculate partial derivatives        (0.004351 Secs) (83.06 percent)
+       calculate misc. information          (0.000078 Secs) (1.49 percent)
+       MKL Peak Memory Use:                 (39753 KB - 38.82 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.197874 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 2
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023142 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035585 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.031941 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.0558506e-07
+Tolerance at iteration [3] = 1.83653648e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.128030 Secs)
+	memory allocation               (0.000061 Secs) (0.05 percent)
+	initialize V, PVPQ, and F(X0)   (0.001278 Secs) (1.00 percent)
+	calculate partial derivatives   (0.011140 Secs) (8.70 percent)
+	form sparse jacobian arrays     (0.026543 Secs) (20.73 percent)
+	form jacobian matirx            (0.000686 Secs) (0.54 percent)
+	solve the linear system         (0.086923 Secs) (67.89 percent)
+	update voltages                 (0.000548 Secs) (0.43 percent)
+	calculate injected bus powers   (0.000539 Secs) (0.42 percent)
+	calculate norm                  (0.000082 Secs) (0.06 percent)
+	average time per iteration      (0.042677 Secs)
+	MKL Peak Memory Use:            (51877 KB - 50.66 MB)
+
+Total Calculation Time (Ybus + PF): (0.159971 Secs)
+
+
+Power flow solution... Successful!          (0.004664 Secs)
+       update generators Pg and Qg          (0.000244 Secs) (5.24 percent)
+       calculate branch flows               (0.000274 Secs) (5.87 percent)
+       calculate line losses                (0.000059 Secs) (1.25 percent)
+       calculate line charging injection    (0.000068 Secs) (1.45 percent)
+       calculate partial derivatives        (0.003621 Secs) (77.64 percent)
+       calculate misc. information          (0.000090 Secs) (1.93 percent)
+       MKL Peak Memory Use:                 (48105 KB - 46.98 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.164635 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 2
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023103 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034976 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.034697 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.0558504e-07
+Tolerance at iteration [3] = 6.79351629e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.128654 Secs)
+	memory allocation               (0.000056 Secs) (0.04 percent)
+	initialize V, PVPQ, and F(X0)   (0.001236 Secs) (0.96 percent)
+	calculate partial derivatives   (0.011013 Secs) (8.56 percent)
+	form sparse jacobian arrays     (0.026515 Secs) (20.61 percent)
+	form jacobian matirx            (0.000760 Secs) (0.59 percent)
+	solve the linear system         (0.087636 Secs) (68.12 percent)
+	update voltages                 (0.000544 Secs) (0.42 percent)
+	calculate injected bus powers   (0.000544 Secs) (0.42 percent)
+	calculate norm                  (0.000080 Secs) (0.06 percent)
+	average time per iteration      (0.042885 Secs)
+	MKL Peak Memory Use:            (60240 KB - 58.83 MB)
+
+Total Calculation Time (Ybus + PF): (0.163350 Secs)
+
+
+Power flow solution... Successful!          (0.004672 Secs)
+       update generators Pg and Qg          (0.000272 Secs) (5.81 percent)
+       calculate branch flows               (0.000280 Secs) (5.99 percent)
+       calculate line losses                (0.000060 Secs) (1.28 percent)
+       calculate line charging injection    (0.000067 Secs) (1.44 percent)
+       calculate partial derivatives        (0.003607 Secs) (77.19 percent)
+       calculate misc. information          (0.000089 Secs) (1.89 percent)
+       MKL Peak Memory Use:                 (56462 KB - 55.14 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.168023 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 4
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023150 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035090 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.036288 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585067e-07
+Tolerance at iteration [3] = 1.38644651e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.107276 Secs)
+	memory allocation               (0.000069 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000844 Secs) (0.79 percent)
+	calculate partial derivatives   (0.007374 Secs) (6.87 percent)
+	form sparse jacobian arrays     (0.020208 Secs) (18.84 percent)
+	form jacobian matirx            (0.000404 Secs) (0.38 percent)
+	solve the linear system         (0.077132 Secs) (71.90 percent)
+	update voltages                 (0.000328 Secs) (0.31 percent)
+	calculate injected bus powers   (0.000357 Secs) (0.33 percent)
+	calculate norm                  (0.000065 Secs) (0.06 percent)
+	average time per iteration      (0.035759 Secs)
+	MKL Peak Memory Use:            (89769 KB - 87.67 MB)
+
+Total Calculation Time (Ybus + PF): (0.143564 Secs)
+
+
+Power flow solution... Successful!          (0.003562 Secs)
+       update generators Pg and Qg          (0.000313 Secs) (8.78 percent)
+       calculate branch flows               (0.000237 Secs) (6.66 percent)
+       calculate line losses                (0.000038 Secs) (1.08 percent)
+       calculate line charging injection    (0.000062 Secs) (1.73 percent)
+       calculate partial derivatives        (0.002478 Secs) (69.58 percent)
+       calculate misc. information          (0.000094 Secs) (2.65 percent)
+       MKL Peak Memory Use:                 (85669 KB - 83.66 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.147125 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 4
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023279 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035725 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.034485 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585056e-07
+Tolerance at iteration [3] = 9.83509529e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.109114 Secs)
+	memory allocation               (0.000053 Secs) (0.05 percent)
+	initialize V, PVPQ, and F(X0)   (0.000792 Secs) (0.73 percent)
+	calculate partial derivatives   (0.007259 Secs) (6.65 percent)
+	form sparse jacobian arrays     (0.020288 Secs) (18.59 percent)
+	form jacobian matirx            (0.000425 Secs) (0.39 percent)
+	solve the linear system         (0.079170 Secs) (72.56 percent)
+	update voltages                 (0.000324 Secs) (0.30 percent)
+	calculate injected bus powers   (0.000340 Secs) (0.31 percent)
+	calculate norm                  (0.000064 Secs) (0.06 percent)
+	average time per iteration      (0.036371 Secs)
+	MKL Peak Memory Use:            (85555 KB - 83.55 MB)
+
+Total Calculation Time (Ybus + PF): (0.143599 Secs)
+
+
+Power flow solution... Successful!          (0.003341 Secs)
+       update generators Pg and Qg          (0.000299 Secs) (8.95 percent)
+       calculate branch flows               (0.000208 Secs) (6.24 percent)
+       calculate line losses                (0.000036 Secs) (1.09 percent)
+       calculate line charging injection    (0.000055 Secs) (1.64 percent)
+       calculate partial derivatives        (0.002322 Secs) (69.50 percent)
+       calculate misc. information          (0.000093 Secs) (2.77 percent)
+       MKL Peak Memory Use:                 (81499 KB - 79.59 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.146940 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 6
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023161 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034971 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.044249 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585038e-07
+Tolerance at iteration [3] = 1.64753766e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.101684 Secs)
+	memory allocation               (0.000063 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000638 Secs) (0.63 percent)
+	calculate partial derivatives   (0.006275 Secs) (6.17 percent)
+	form sparse jacobian arrays     (0.018339 Secs) (18.04 percent)
+	form jacobian matirx            (0.000336 Secs) (0.33 percent)
+	solve the linear system         (0.074540 Secs) (73.31 percent)
+	update voltages                 (0.000235 Secs) (0.23 percent)
+	calculate injected bus powers   (0.000286 Secs) (0.28 percent)
+	calculate norm                  (0.000063 Secs) (0.06 percent)
+	average time per iteration      (0.033895 Secs)
+	MKL Peak Memory Use:            (106585 KB - 104.09 MB)
+
+Total Calculation Time (Ybus + PF): (0.145933 Secs)
+
+
+Power flow solution... Successful!          (0.003228 Secs)
+       update generators Pg and Qg          (0.000280 Secs) (8.68 percent)
+       calculate branch flows               (0.000222 Secs) (6.86 percent)
+       calculate line losses                (0.000029 Secs) (0.90 percent)
+       calculate line charging injection    (0.000045 Secs) (1.40 percent)
+       calculate partial derivatives        (0.002235 Secs) (69.22 percent)
+       calculate misc. information          (0.000096 Secs) (2.98 percent)
+       MKL Peak Memory Use:                 (102405 KB - 100.00 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.149161 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 6
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023372 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034901 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.023972 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585044e-07
+Tolerance at iteration [3] = 1.06053113e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.102062 Secs)
+	memory allocation               (0.000062 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000617 Secs) (0.60 percent)
+	calculate partial derivatives   (0.006188 Secs) (6.06 percent)
+	form sparse jacobian arrays     (0.018439 Secs) (18.07 percent)
+	form jacobian matirx            (0.000324 Secs) (0.32 percent)
+	solve the linear system         (0.075060 Secs) (73.54 percent)
+	update voltages                 (0.000234 Secs) (0.23 percent)
+	calculate injected bus powers   (0.000290 Secs) (0.28 percent)
+	calculate norm                  (0.000068 Secs) (0.07 percent)
+	average time per iteration      (0.034021 Secs)
+	MKL Peak Memory Use:            (106667 KB - 104.17 MB)
+
+Total Calculation Time (Ybus + PF): (0.126034 Secs)
+
+
+Power flow solution... Successful!          (0.003203 Secs)
+       update generators Pg and Qg          (0.000320 Secs) (9.99 percent)
+       calculate branch flows               (0.000210 Secs) (6.55 percent)
+       calculate line losses                (0.000029 Secs) (0.92 percent)
+       calculate line charging injection    (0.000046 Secs) (1.43 percent)
+       calculate partial derivatives        (0.002190 Secs) (68.38 percent)
+       calculate misc. information          (0.000094 Secs) (2.94 percent)
+       MKL Peak Memory Use:                 (102412 KB - 100.01 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.129237 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 8
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023263 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035000 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.037773 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585078e-07
+Tolerance at iteration [3] = 7.95060012e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.099408 Secs)
+	memory allocation               (0.000068 Secs) (0.07 percent)
+	initialize V, PVPQ, and F(X0)   (0.000476 Secs) (0.48 percent)
+	calculate partial derivatives   (0.005738 Secs) (5.77 percent)
+	form sparse jacobian arrays     (0.018104 Secs) (18.21 percent)
+	form jacobian matirx            (0.000274 Secs) (0.28 percent)
+	solve the linear system         (0.073094 Secs) (73.53 percent)
+	update voltages                 (0.000209 Secs) (0.21 percent)
+	calculate injected bus powers   (0.000265 Secs) (0.27 percent)
+	calculate norm                  (0.000065 Secs) (0.07 percent)
+	average time per iteration      (0.033136 Secs)
+	MKL Peak Memory Use:            (136129 KB - 132.94 MB)
+
+Total Calculation Time (Ybus + PF): (0.137181 Secs)
+
+
+Power flow solution... Successful!          (0.002944 Secs)
+       update generators Pg and Qg          (0.000285 Secs) (9.70 percent)
+       calculate branch flows               (0.000202 Secs) (6.87 percent)
+       calculate line losses                (0.000026 Secs) (0.87 percent)
+       calculate line charging injection    (0.000041 Secs) (1.40 percent)
+       calculate partial derivatives        (0.001976 Secs) (67.13 percent)
+       calculate misc. information          (0.000097 Secs) (3.31 percent)
+       MKL Peak Memory Use:                 (131629 KB - 128.54 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.140125 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 8
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023149 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035232 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.025007 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585046e-07
+Tolerance at iteration [3] = 7.13173964e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.098883 Secs)
+	memory allocation               (0.000070 Secs) (0.07 percent)
+	initialize V, PVPQ, and F(X0)   (0.000485 Secs) (0.49 percent)
+	calculate partial derivatives   (0.005649 Secs) (5.71 percent)
+	form sparse jacobian arrays     (0.017742 Secs) (17.94 percent)
+	form jacobian matirx            (0.000281 Secs) (0.28 percent)
+	solve the linear system         (0.072901 Secs) (73.72 percent)
+	update voltages                 (0.000202 Secs) (0.20 percent)
+	calculate injected bus powers   (0.000242 Secs) (0.24 percent)
+	calculate norm                  (0.000064 Secs) (0.06 percent)
+	average time per iteration      (0.032961 Secs)
+	MKL Peak Memory Use:            (144377 KB - 140.99 MB)
+
+Total Calculation Time (Ybus + PF): (0.123890 Secs)
+
+
+Power flow solution... Successful!          (0.002998 Secs)
+       update generators Pg and Qg          (0.000313 Secs) (10.43 percent)
+       calculate branch flows               (0.000206 Secs) (6.87 percent)
+       calculate line losses                (0.000024 Secs) (0.80 percent)
+       calculate line charging injection    (0.000042 Secs) (1.40 percent)
+       calculate partial derivatives        (0.001993 Secs) (66.49 percent)
+       calculate misc. information          (0.000100 Secs) (3.34 percent)
+       MKL Peak Memory Use:                 (139946 KB - 136.67 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.126888 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 10
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023174 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034994 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.039720 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585033e-07
+Tolerance at iteration [3] = 1.06124986e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.100887 Secs)
+	memory allocation               (0.000064 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000421 Secs) (0.42 percent)
+	calculate partial derivatives   (0.005407 Secs) (5.36 percent)
+	form sparse jacobian arrays     (0.017536 Secs) (17.38 percent)
+	form jacobian matirx            (0.000226 Secs) (0.22 percent)
+	solve the linear system         (0.075099 Secs) (74.44 percent)
+	update voltages                 (0.000198 Secs) (0.20 percent)
+	calculate injected bus powers   (0.000248 Secs) (0.25 percent)
+	calculate norm                  (0.000063 Secs) (0.06 percent)
+	average time per iteration      (0.033629 Secs)
+	MKL Peak Memory Use:            (169846 KB - 165.87 MB)
+
+Total Calculation Time (Ybus + PF): (0.140607 Secs)
+
+
+Power flow solution... Successful!          (0.002760 Secs)
+       update generators Pg and Qg          (0.000315 Secs) (11.40 percent)
+       calculate branch flows               (0.000203 Secs) (7.36 percent)
+       calculate line losses                (0.000021 Secs) (0.75 percent)
+       calculate line charging injection    (0.000038 Secs) (1.36 percent)
+       calculate partial derivatives        (0.001804 Secs) (65.35 percent)
+       calculate misc. information          (0.000094 Secs) (3.39 percent)
+       MKL Peak Memory Use:                 (165070 KB - 161.20 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.143367 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 10
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023116 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034966 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5103 KB -  4.98 MB
+Successful! (0.027129 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585046e-07
+Tolerance at iteration [3] = 1.05638909e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.100638 Secs)
+	memory allocation               (0.000068 Secs) (0.07 percent)
+	initialize V, PVPQ, and F(X0)   (0.000420 Secs) (0.42 percent)
+	calculate partial derivatives   (0.005390 Secs) (5.36 percent)
+	form sparse jacobian arrays     (0.017328 Secs) (17.22 percent)
+	form jacobian matirx            (0.000220 Secs) (0.22 percent)
+	solve the linear system         (0.074891 Secs) (74.42 percent)
+	update voltages                 (0.000196 Secs) (0.19 percent)
+	calculate injected bus powers   (0.000238 Secs) (0.24 percent)
+	calculate norm                  (0.000063 Secs) (0.06 percent)
+	average time per iteration      (0.033546 Secs)
+	MKL Peak Memory Use:            (182326 KB - 178.05 MB)
+
+Total Calculation Time (Ybus + PF): (0.127767 Secs)
+
+
+Power flow solution... Successful!          (0.002706 Secs)
+       update generators Pg and Qg          (0.000317 Secs) (11.70 percent)
+       calculate branch flows               (0.000195 Secs) (7.21 percent)
+       calculate line losses                (0.000024 Secs) (0.88 percent)
+       calculate line charging injection    (0.000038 Secs) (1.42 percent)
+       calculate partial derivatives        (0.001768 Secs) (65.31 percent)
+       calculate misc. information          (0.000096 Secs) (3.55 percent)
+       MKL Peak Memory Use:                 (177550 KB - 173.39 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.130473 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 20
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023029 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035202 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5603 KB -  5.47 MB
+Successful! (0.052632 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585053e-07
+Tolerance at iteration [3] = 1.08315709e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.105217 Secs)
+	memory allocation               (0.000060 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000312 Secs) (0.30 percent)
+	calculate partial derivatives   (0.004923 Secs) (4.68 percent)
+	form sparse jacobian arrays     (0.016913 Secs) (16.07 percent)
+	form jacobian matirx            (0.000167 Secs) (0.16 percent)
+	solve the linear system         (0.078689 Secs) (74.79 percent)
+	update voltages                 (0.000128 Secs) (0.12 percent)
+	calculate injected bus powers   (0.000194 Secs) (0.18 percent)
+	calculate norm                  (0.000081 Secs) (0.08 percent)
+	average time per iteration      (0.035072 Secs)
+	MKL Peak Memory Use:            (292091 KB - 285.25 MB)
+
+Total Calculation Time (Ybus + PF): (0.157848 Secs)
+
+
+Power flow solution... Successful!          (0.003053 Secs)
+       update generators Pg and Qg          (0.000795 Secs) (26.02 percent)
+       calculate branch flows               (0.000210 Secs) (6.89 percent)
+       calculate line losses                (0.000025 Secs) (0.83 percent)
+       calculate line charging injection    (0.000042 Secs) (1.38 percent)
+       calculate partial derivatives        (0.001579 Secs) (51.70 percent)
+       calculate misc. information          (0.000102 Secs) (3.33 percent)
+       MKL Peak Memory Use:                 (286124 KB - 279.42 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.160902 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 12
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023862 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035672 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5195 KB -  5.07 MB
+Successful! (0.045185 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585056e-07
+Tolerance at iteration [3] = 8.21356871e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.101669 Secs)
+	memory allocation               (0.000077 Secs) (0.08 percent)
+	initialize V, PVPQ, and F(X0)   (0.000385 Secs) (0.38 percent)
+	calculate partial derivatives   (0.005549 Secs) (5.46 percent)
+	form sparse jacobian arrays     (0.016996 Secs) (16.72 percent)
+	form jacobian matirx            (0.000186 Secs) (0.18 percent)
+	solve the linear system         (0.075943 Secs) (74.70 percent)
+	update voltages                 (0.000189 Secs) (0.19 percent)
+	calculate injected bus powers   (0.000218 Secs) (0.21 percent)
+	calculate norm                  (0.000073 Secs) (0.07 percent)
+	average time per iteration      (0.033890 Secs)
+	MKL Peak Memory Use:            (203434 KB - 198.67 MB)
+
+Total Calculation Time (Ybus + PF): (0.146854 Secs)
+
+
+Power flow solution... Successful!          (0.002835 Secs)
+       update generators Pg and Qg          (0.000344 Secs) (12.12 percent)
+       calculate branch flows               (0.000199 Secs) (7.01 percent)
+       calculate line losses                (0.000023 Secs) (0.82 percent)
+       calculate line charging injection    (0.000040 Secs) (1.41 percent)
+       calculate partial derivatives        (0.001844 Secs) (65.04 percent)
+       calculate misc. information          (0.000096 Secs) (3.40 percent)
+       MKL Peak Memory Use:                 (198431 KB - 193.78 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.149689 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 12
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023257 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035002 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5195 KB -  5.07 MB
+Successful! (0.043648 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585047e-07
+Tolerance at iteration [3] = 9.89094917e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.103109 Secs)
+	memory allocation               (0.000066 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000384 Secs) (0.37 percent)
+	calculate partial derivatives   (0.005642 Secs) (5.47 percent)
+	form sparse jacobian arrays     (0.017070 Secs) (16.56 percent)
+	form jacobian matirx            (0.000190 Secs) (0.18 percent)
+	solve the linear system         (0.076999 Secs) (74.68 percent)
+	update voltages                 (0.000172 Secs) (0.17 percent)
+	calculate injected bus powers   (0.000215 Secs) (0.21 percent)
+	calculate norm                  (0.000065 Secs) (0.06 percent)
+	average time per iteration      (0.034370 Secs)
+	MKL Peak Memory Use:            (199231 KB - 194.56 MB)
+
+Total Calculation Time (Ybus + PF): (0.146756 Secs)
+
+
+Power flow solution... Successful!          (0.002844 Secs)
+       update generators Pg and Qg          (0.000325 Secs) (11.44 percent)
+       calculate branch flows               (0.000214 Secs) (7.53 percent)
+       calculate line losses                (0.000025 Secs) (0.89 percent)
+       calculate line charging injection    (0.000038 Secs) (1.32 percent)
+       calculate partial derivatives        (0.001841 Secs) (64.72 percent)
+       calculate misc. information          (0.000102 Secs) (3.59 percent)
+       MKL Peak Memory Use:                 (194270 KB - 189.72 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.149601 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 14
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023487 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035037 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5297 KB -  5.17 MB
+Successful! (0.045306 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585023e-07
+Tolerance at iteration [3] = 5.8714495e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.104099 Secs)
+	memory allocation               (0.000065 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000348 Secs) (0.33 percent)
+	calculate partial derivatives   (0.005514 Secs) (5.30 percent)
+	form sparse jacobian arrays     (0.016762 Secs) (16.10 percent)
+	form jacobian matirx            (0.000164 Secs) (0.16 percent)
+	solve the linear system         (0.078354 Secs) (75.27 percent)
+	update voltages                 (0.000160 Secs) (0.15 percent)
+	calculate injected bus powers   (0.000227 Secs) (0.22 percent)
+	calculate norm                  (0.000088 Secs) (0.08 percent)
+	average time per iteration      (0.034700 Secs)
+	MKL Peak Memory Use:            (216226 KB - 211.16 MB)
+
+Total Calculation Time (Ybus + PF): (0.149406 Secs)
+
+
+Power flow solution... Successful!          (0.002709 Secs)
+       update generators Pg and Qg          (0.000350 Secs) (12.92 percent)
+       calculate branch flows               (0.000201 Secs) (7.42 percent)
+       calculate line losses                (0.000024 Secs) (0.88 percent)
+       calculate line charging injection    (0.000040 Secs) (1.47 percent)
+       calculate partial derivatives        (0.001706 Secs) (62.99 percent)
+       calculate misc. information          (0.000099 Secs) (3.64 percent)
+       MKL Peak Memory Use:                 (210966 KB - 206.02 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.152114 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 14
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023683 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034932 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5297 KB -  5.17 MB
+Successful! (0.031835 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585063e-07
+Tolerance at iteration [3] = 7.3799166e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.102738 Secs)
+	memory allocation               (0.000065 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000351 Secs) (0.34 percent)
+	calculate partial derivatives   (0.005556 Secs) (5.41 percent)
+	form sparse jacobian arrays     (0.016858 Secs) (16.41 percent)
+	form jacobian matirx            (0.000160 Secs) (0.16 percent)
+	solve the linear system         (0.076923 Secs) (74.87 percent)
+	update voltages                 (0.000156 Secs) (0.15 percent)
+	calculate injected bus powers   (0.000223 Secs) (0.22 percent)
+	calculate norm                  (0.000067 Secs) (0.07 percent)
+	average time per iteration      (0.034246 Secs)
+	MKL Peak Memory Use:            (212050 KB - 207.08 MB)
+
+Total Calculation Time (Ybus + PF): (0.134573 Secs)
+
+
+Power flow solution... Successful!          (0.002766 Secs)
+       update generators Pg and Qg          (0.000351 Secs) (12.70 percent)
+       calculate branch flows               (0.000206 Secs) (7.46 percent)
+       calculate line losses                (0.000023 Secs) (0.82 percent)
+       calculate line charging injection    (0.000039 Secs) (1.40 percent)
+       calculate partial derivatives        (0.001741 Secs) (62.94 percent)
+       calculate misc. information          (0.000104 Secs) (3.75 percent)
+       MKL Peak Memory Use:                 (206835 KB - 201.99 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.137339 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 16
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023213 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034922 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5399 KB -  5.27 MB
+Successful! (0.045508 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585034e-07
+Tolerance at iteration [3] = 1.11095856e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.103607 Secs)
+	memory allocation               (0.000058 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000347 Secs) (0.33 percent)
+	calculate partial derivatives   (0.005142 Secs) (4.96 percent)
+	form sparse jacobian arrays     (0.016585 Secs) (16.01 percent)
+	form jacobian matirx            (0.000157 Secs) (0.15 percent)
+	solve the linear system         (0.077889 Secs) (75.18 percent)
+	update voltages                 (0.000165 Secs) (0.16 percent)
+	calculate injected bus powers   (0.000188 Secs) (0.18 percent)
+	calculate norm                  (0.000082 Secs) (0.08 percent)
+	average time per iteration      (0.034536 Secs)
+	MKL Peak Memory Use:            (249634 KB - 243.78 MB)
+
+Total Calculation Time (Ybus + PF): (0.149115 Secs)
+
+
+Power flow solution... Successful!          (0.002686 Secs)
+       update generators Pg and Qg          (0.000361 Secs) (13.45 percent)
+       calculate branch flows               (0.000217 Secs) (8.10 percent)
+       calculate line losses                (0.000024 Secs) (0.89 percent)
+       calculate line charging injection    (0.000040 Secs) (1.48 percent)
+       calculate partial derivatives        (0.001649 Secs) (61.40 percent)
+       calculate misc. information          (0.000097 Secs) (3.61 percent)
+       MKL Peak Memory Use:                 (244367 KB - 238.64 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.151801 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 16
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023455 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034934 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5399 KB -  5.27 MB
+Successful! (0.038787 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585042e-07
+Tolerance at iteration [3] = 7.33635581e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.103711 Secs)
+	memory allocation               (0.000056 Secs) (0.05 percent)
+	initialize V, PVPQ, and F(X0)   (0.000340 Secs) (0.33 percent)
+	calculate partial derivatives   (0.005308 Secs) (5.12 percent)
+	form sparse jacobian arrays     (0.016598 Secs) (16.00 percent)
+	form jacobian matirx            (0.000164 Secs) (0.16 percent)
+	solve the linear system         (0.077745 Secs) (74.96 percent)
+	update voltages                 (0.000137 Secs) (0.13 percent)
+	calculate injected bus powers   (0.000208 Secs) (0.20 percent)
+	calculate norm                  (0.000074 Secs) (0.07 percent)
+	average time per iteration      (0.034570 Secs)
+	MKL Peak Memory Use:            (254023 KB - 248.07 MB)
+
+Total Calculation Time (Ybus + PF): (0.142498 Secs)
+
+
+Power flow solution... Successful!          (0.002712 Secs)
+       update generators Pg and Qg          (0.000355 Secs) (13.07 percent)
+       calculate branch flows               (0.000220 Secs) (8.13 percent)
+       calculate line losses                (0.000023 Secs) (0.86 percent)
+       calculate line charging injection    (0.000039 Secs) (1.43 percent)
+       calculate partial derivatives        (0.001681 Secs) (61.98 percent)
+       calculate misc. information          (0.000101 Secs) (3.71 percent)
+       MKL Peak Memory Use:                 (248530 KB - 242.71 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.145210 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 18
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023765 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.035761 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5501 KB -  5.37 MB
+Successful! (0.048089 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585095e-07
+Tolerance at iteration [3] = 8.55709947e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.103746 Secs)
+	memory allocation               (0.000073 Secs) (0.07 percent)
+	initialize V, PVPQ, and F(X0)   (0.000333 Secs) (0.32 percent)
+	calculate partial derivatives   (0.004884 Secs) (4.71 percent)
+	form sparse jacobian arrays     (0.017033 Secs) (16.42 percent)
+	form jacobian matirx            (0.000206 Secs) (0.20 percent)
+	solve the linear system         (0.077417 Secs) (74.62 percent)
+	update voltages                 (0.000129 Secs) (0.12 percent)
+	calculate injected bus powers   (0.000208 Secs) (0.20 percent)
+	calculate norm                  (0.000074 Secs) (0.07 percent)
+	average time per iteration      (0.034582 Secs)
+	MKL Peak Memory Use:            (279068 KB - 272.53 MB)
+
+Total Calculation Time (Ybus + PF): (0.151835 Secs)
+
+
+Power flow solution... Successful!          (0.002748 Secs)
+       update generators Pg and Qg          (0.000377 Secs) (13.73 percent)
+       calculate branch flows               (0.000202 Secs) (7.35 percent)
+       calculate line losses                (0.000023 Secs) (0.84 percent)
+       calculate line charging injection    (0.000034 Secs) (1.25 percent)
+       calculate partial derivatives        (0.001715 Secs) (62.40 percent)
+       calculate misc. information          (0.000100 Secs) (3.64 percent)
+       MKL Peak Memory Use:                 (273582 KB - 267.17 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.154584 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 18
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023178 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034997 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5501 KB -  5.37 MB
+Successful! (0.047553 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585065e-07
+Tolerance at iteration [3] = 1.19526079e-11
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.107936 Secs)
+	memory allocation               (0.000056 Secs) (0.05 percent)
+	initialize V, PVPQ, and F(X0)   (0.000374 Secs) (0.35 percent)
+	calculate partial derivatives   (0.004708 Secs) (4.36 percent)
+	form sparse jacobian arrays     (0.019485 Secs) (18.05 percent)
+	form jacobian matirx            (0.000144 Secs) (0.13 percent)
+	solve the linear system         (0.078788 Secs) (73.00 percent)
+	update voltages                 (0.000115 Secs) (0.11 percent)
+	calculate injected bus powers   (0.000200 Secs) (0.19 percent)
+	calculate norm                  (0.000071 Secs) (0.07 percent)
+	average time per iteration      (0.035979 Secs)
+	MKL Peak Memory Use:            (270989 KB - 264.64 MB)
+
+Total Calculation Time (Ybus + PF): (0.155489 Secs)
+
+
+Power flow solution... Successful!          (0.002443 Secs)
+       update generators Pg and Qg          (0.000376 Secs) (15.39 percent)
+       calculate branch flows               (0.000203 Secs) (8.32 percent)
+       calculate line losses                (0.000017 Secs) (0.71 percent)
+       calculate line charging injection    (0.000027 Secs) (1.09 percent)
+       calculate partial derivatives        (0.001471 Secs) (60.22 percent)
+       calculate misc. information          (0.000106 Secs) (4.32 percent)
+       MKL Peak Memory Use:                 (265242 KB - 259.03 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.157932 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 20
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023346 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034940 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5603 KB -  5.47 MB
+Successful! (0.051453 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585049e-07
+Tolerance at iteration [3] = 8.10522001e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.105795 Secs)
+	memory allocation               (0.000074 Secs) (0.07 percent)
+	initialize V, PVPQ, and F(X0)   (0.000308 Secs) (0.29 percent)
+	calculate partial derivatives   (0.004976 Secs) (4.70 percent)
+	form sparse jacobian arrays     (0.016576 Secs) (15.67 percent)
+	form jacobian matirx            (0.000178 Secs) (0.17 percent)
+	solve the linear system         (0.079447 Secs) (75.10 percent)
+	update voltages                 (0.000127 Secs) (0.12 percent)
+	calculate injected bus powers   (0.000183 Secs) (0.17 percent)
+	calculate norm                  (0.000078 Secs) (0.07 percent)
+	average time per iteration      (0.035265 Secs)
+	MKL Peak Memory Use:            (300299 KB - 293.26 MB)
+
+Total Calculation Time (Ybus + PF): (0.157248 Secs)
+
+
+Power flow solution... Successful!          (0.002763 Secs)
+       update generators Pg and Qg          (0.000411 Secs) (14.88 percent)
+       calculate branch flows               (0.000213 Secs) (7.69 percent)
+       calculate line losses                (0.000026 Secs) (0.95 percent)
+       calculate line charging injection    (0.000045 Secs) (1.61 percent)
+       calculate partial derivatives        (0.001627 Secs) (58.88 percent)
+       calculate misc. information          (0.000103 Secs) (3.74 percent)
+       MKL Peak Memory Use:                 (294489 KB - 287.59 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.160011 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
+
+Case File Name = case6515rte.m
+OMP is Enabled
+OMP Cores = 20
+Solver is Set to Sparse
+
+Loading case data... Successful! (0.023504 Secs)
+
+Initializing case data... 
+	Reordering bus numbers
+Successful! (0.034964 Secs)
+
+Building Ybus... 
+	MKL Peak Memory Use: 5603 KB -  5.47 MB
+Successful! (0.051284 Secs)
+
+
+CASE INFORMATION:
+No. of Buses = 6515
+No. of Branches = 9037
+No. of PV Buses = 493
+No. of PQ Buses = 6021
+No. of Generators = 1389
+No. of Online Generators = 685
+Ref. Bus(es) = 4714, 
+
+********************* Starting Power Flow Iterations (Sparse) *************************
+
+Tolerance at F(x0) = 0.190670452
+Tolerance at iteration [1] = 0.00262765932
+Tolerance at iteration [2] = 1.05585051e-07
+Tolerance at iteration [3] = 7.68729949e-12
+Power flow converged in [3] iterations!
+
+********************************* End of Power Flow ***********************************
+
+Power flow calculation... Successful!   (0.104368 Secs)
+	memory allocation               (0.000059 Secs) (0.06 percent)
+	initialize V, PVPQ, and F(X0)   (0.000311 Secs) (0.30 percent)
+	calculate partial derivatives   (0.004810 Secs) (4.61 percent)
+	form sparse jacobian arrays     (0.017442 Secs) (16.71 percent)
+	form jacobian matirx            (0.000153 Secs) (0.15 percent)
+	solve the linear system         (0.077470 Secs) (74.23 percent)
+	update voltages                 (0.000129 Secs) (0.12 percent)
+	calculate injected bus powers   (0.000185 Secs) (0.18 percent)
+	calculate norm                  (0.000092 Secs) (0.09 percent)
+	average time per iteration      (0.034789 Secs)
+	MKL Peak Memory Use:            (279297 KB - 272.75 MB)
+
+Total Calculation Time (Ybus + PF): (0.155652 Secs)
+
+
+Power flow solution... Successful!          (0.002628 Secs)
+       update generators Pg and Qg          (0.000395 Secs) (15.02 percent)
+       calculate branch flows               (0.000216 Secs) (8.23 percent)
+       calculate line losses                (0.000025 Secs) (0.94 percent)
+       calculate line charging injection    (0.000037 Secs) (1.41 percent)
+       calculate partial derivatives        (0.001571 Secs) (59.77 percent)
+       calculate misc. information          (0.000106 Secs) (4.05 percent)
+       MKL Peak Memory Use:                 (273612 KB - 267.20 MB)
+
+Total Calculation Time (Ybus + PF + Solution): (0.158280 Secs)
+
+
+=================================================== System Summary ====================================================
+             How many?                             How much?                      P (MW)                 Q (MVAr)        
+-----------------------------------     -------------------------------------------------------------------------------  
+Buses                         6515         Total Generation Capacity            188815.47         -49299.01 to 78995.48
+Generators                    1389               On-line Capacity               126901.04         -33362.60 to 59006.83
+   Comitted                    685               Actual Generation              110109.25               19891.42
+   Offline                     704         Load                                 107264.00               17413.80
+Loads                         3673         Shunt (inj)                              -0.00                4814.85
+Shunts                         102         Line Losess                            2845.25               41085.49
+Branches                      9037         Brnach Charging (inj)                      -                 33792.98
+   In-Service                 9037        
+   Out-Of-Service                0        
+Transformers                  9037        
+ 
+ 
+                                        Minimum                                                   Maximum 
+                         -------------------------------------                     ------------------------------------ 
+Voltage Magnitude                0.559 p.u. @ bus   2669                             1.176 p.u   @ bus     464
+Voltage Angle                   -70.29 deg  @ bus   4054                             15.21 deg   @ bus    6490
+P Losses                                  -                                          19.04 MW    @ line   4577-3752
+Q Losses                                  -                                         244.83 MVAr  @ line     35-6204
+=======================================================================================================================
+
